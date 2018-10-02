@@ -1,4 +1,4 @@
-/.idea
+/.idea/
 /bin
 !/bin/console
 /build
@@ -18,3 +18,8 @@
 ###> behat/symfony2-extension ###
 behat.yml
 ###< behat/symfony2-extension ###
+
+###> squizlabs/php_codesniffer ###
+/.phpcs-cache
+/phpcs.xml
+###< squizlabs/php_codesniffer ###
