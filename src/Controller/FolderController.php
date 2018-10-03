@@ -4,14 +4,12 @@ namespace App\Controller;
 
 use App\Repository\FolderRepository;
 use Symfony\Component\Routing\Annotation\Route;
-use App\Entity\Folder;
+use Nelmio\ApiDocBundle\Annotation\ApiDoc;
 
 /**
  * Class FolderGetByPath
- *
- * @package App\Controller
  */
-class FolderGetByPath
+class FolderController
 {
     /**
      * @var FolderRepository
@@ -24,22 +22,25 @@ class FolderGetByPath
     }
 
     /**
+     * @ApiDoc(
+     *      section="Version 1.0",
+     *      description="Task list",
+     *      statusCodes={
+     *          200="OK",
+     *      }
+     * )
+     *
      * @Route(
      *     name="get_by_path",
      *     path="/folders/path/{path}",
      *     methods={"GET"},
-     *     requirements={"path"=".*"},
-     *     defaults={
-     *         "_api_resource_class"=Folder::class,
-     *         "_api_item_operation_name"="get_by_path"
-     *     }
-     *
+     *     requirements={"path"=".*"}
      * )
      *
      * @param $path
      *
      */
-    public function __invoke($path)
+    public function getByPathAction($path)
     {
         return $this->folderRepository->findByPath($path);
     }

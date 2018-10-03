@@ -2,7 +2,6 @@
 
 namespace App\Entity;
 
-use ApiPlatform\Core\Annotation\ApiResource;
 use Symfony\Component\Serializer\Annotation\Groups;
 use Doctrine\ORM\Mapping as ORM;
 
@@ -22,20 +21,22 @@ class File
     /**
      * @ORM\Column(type="string", length=4096, nullable=true)
      *
-     * @Groups({"read", "write"})
+     * @Groups({"read"})
      */
     private $path;
 
     /**
      * @ORM\Column(type="string", length=255)
      *
-     * @Groups({"read", "write"})
+     * @Groups({"read"})
      */
     private $name;
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Folder", inversedBy="files")
      * @ORM\JoinColumn(nullable=true)
+     *
+     * @Groups({"read"})
      */
     private $folder;
 

@@ -23,8 +23,7 @@ class Folder
     /**
      * @ORM\Column(type="string", length=4096, nullable=true)
      *
-     * @ApiProperty()
-     * @Groups({"read", "write"})
+     * @Groups({"read"})
      */
     private $path;
 
@@ -43,6 +42,8 @@ class Folder
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Folder", mappedBy="parent")
+     *
+     * @Groups({"read"})
      */
     private $folders;
 
