@@ -17,6 +17,8 @@ class Folder
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     *
+     * @Groups({"read"})
      */
     private $id;
 
@@ -35,15 +37,11 @@ class Folder
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\File", mappedBy="folder", orphanRemoval=true)
-     *
-     * @Groups({"read"})
      */
     private $files;
 
     /**
      * @ORM\OneToMany(targetEntity="App\Entity\Folder", mappedBy="parent")
-     *
-     * @Groups({"read"})
      */
     private $folders;
 

@@ -1,0 +1,8 @@
+path:
+    invalid: This path is not valid.
+
+folder_get_by_path_request:
+    path:
+        not_null: Path is null
+    folder:
+        not_found: Folder not found

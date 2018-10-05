@@ -15,6 +15,8 @@ class File
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     *
+     * @Groups({"read"})
      */
     private $id;
 
