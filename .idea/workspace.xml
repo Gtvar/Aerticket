@@ -2,39 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37a279d3-ce20-4675-a394-b9136cd3e233" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Annotation/Controller/Rest/View.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTO/Request/Folder/FolderGetByPathRequest.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTO/Request/RequestInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTO/Request/RequestPaginationInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTO/Request/Traits/RequestPaginationTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTO/Response/Folder/FolderGetByPathResponse.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTO/Response/Folder/FoldersResponse.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTO/Response/Pagination/PageInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTO/Response/Pagination/PageMetadata.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTO/Response/Pagination/Paginator.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTO/Response/Pagination/Traits/PageTrait.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTO/Response/ResponseInterface.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Exception/Http/VerboseBadRequestHttpException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Exception/Http/VerboseHttpException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Exception/Http/VerboseNotFoundHttpException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Exception/Validator/InvalidParamsException.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Handler/Folder/FolderGetByPathHandler.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Validator/Constraints/EntityReference.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Validator/Constraints/EntityReferenceValidator.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/Validator/Validator.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/translations/validator.en.yml" />
-      <change beforePath="$PROJECT_DIR$/.idea/TestProg.iml" afterPath="$PROJECT_DIR$/.idea/TestProg.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/Controller/Api/V1/ApiController.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/DTO/Response/V1/VersionResponse.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" afterPath="$PROJECT_DIR$/config/bundles.php" />
-      <change beforePath="$PROJECT_DIR$/config/packages/nelmio_api_doc.yaml" afterPath="$PROJECT_DIR$/config/packages/nelmio_api_doc.yaml" />
-      <change beforePath="$PROJECT_DIR$/config/routes/nelmio_api_doc.yaml" afterPath="$PROJECT_DIR$/config/routes/nelmio_api_doc.yaml" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" afterPath="$PROJECT_DIR$/config/services.yaml" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FolderController.php" afterPath="$PROJECT_DIR$/src/Controller/FolderController.php" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/File.php" afterPath="$PROJECT_DIR$/src/Entity/File.php" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Folder.php" afterPath="$PROJECT_DIR$/src/Entity/Folder.php" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" afterPath="$PROJECT_DIR$/symfony.lock" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FolderController.php" afterPath="$PROJECT_DIR$/src/Controller/Api/V1/FolderController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,12 +40,36 @@
         </entry>
       </file>
       <file leaf-file-name="FolderController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/FolderController.php">
+        <entry file="file://$PROJECT_DIR$/src/Controller/Api/V1/FolderController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-346">
-              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            <state relative-caret-position="266">
+              <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
               <folding>
-                <element signature="e#34#84#0#PHP" expanded="true" />
+                <element signature="e#41#91#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/Api/V1/ApiController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="20" />
+              <folding>
+                <element signature="e#41#81#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VersionResponse.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DTO/Response/V1/VersionResponse.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+              <folding>
+                <element signature="e#39#78#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,26 +120,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-276">
               <caret line="1" column="34" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/services.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -205,6 +180,10 @@
         <option value="$PROJECT_DIR$/src/Annotation/Controller/Rest/View.php" />
         <option value="$PROJECT_DIR$/src/Controller/FolderController.php" />
         <option value="$PROJECT_DIR$/config/packages/nelmio_api_doc.yaml" />
+        <option value="$PROJECT_DIR$/src/Controller/V1/ApiController.php" />
+        <option value="$PROJECT_DIR$/src/DTO/Response/V1/VersionResponse.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Api/V1/ApiController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Api/V1/FolderController.php" />
       </list>
     </option>
   </component>
@@ -425,6 +404,21 @@
               <item name="TestProg" type="b2602c69:ProjectViewProjectNode" />
               <item name="TestProg" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Api" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestProg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Api" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="V1" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestProg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="DTO" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -456,6 +450,14 @@
               <item name="DTO" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Response" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Folder" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="TestProg" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TestProg" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DTO" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Response" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="V1" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="TestProg" type="b2602c69:ProjectViewProjectNode" />
@@ -499,14 +501,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Controller/Api" />
+      <recent name="$PROJECT_DIR$/src/Controller/V1" />
       <recent name="$PROJECT_DIR$/src/Annotation/Controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/DTO/Response" />
+      <recent name="$PROJECT_DIR$/src/Controller/V1" />
       <recent name="$PROJECT_DIR$/src/Handler" />
       <recent name="$PROJECT_DIR$/translations" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/DTO/Response/Folder" />
-      <recent name="$PROJECT_DIR$/src/DTO/Response" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -539,12 +543,12 @@
       <workItem from="1538020596008" duration="588000" />
       <workItem from="1538454279273" duration="8066000" />
       <workItem from="1538542297063" duration="561000" />
-      <workItem from="1538709984244" duration="6023000" />
+      <workItem from="1538709984244" duration="6616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17790000" />
+    <option name="totallyTimeSpent" value="18383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="717" extended-state="0" />
@@ -583,20 +587,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/Controller.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/AbstractController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="38" column="15" lean-forward="false" selection-start-line="38" selection-start-column="15" selection-end-line="38" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/TodoController.php" />
     <entry file="file://$PROJECT_DIR$/config/packages/framework.yaml">
       <provider selected="true" editor-type-id="text-editor">
@@ -987,12 +977,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/FolderController.php">
+    <entry file="file://$PROJECT_DIR$/src/DTO/Response/V1/VersionResponse.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-346">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="494">
+          <caret line="33" column="5" lean-forward="false" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
           <folding>
-            <element signature="e#34#84#0#PHP" expanded="true" />
+            <element signature="e#39#78#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Api/V1/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="e#41#81#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Api/V1/FolderController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="42" column="8" lean-forward="true" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+          <folding>
+            <element signature="e#41#91#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

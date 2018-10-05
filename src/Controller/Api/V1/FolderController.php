@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\Api\V1;
 
 use App\DTO\Request\Folder\FolderGetByPathRequest;
 use App\DTO\Response\Folder\FolderGetByPathResponse;
@@ -35,11 +35,11 @@ class FolderController
 
     /**
      * @Route(
+     *     "/api/v1//folders/path/{path}.{_format}",
      *     name="folder_get_by_path",
-     *     path="/folders/path/{path}",
      *     methods={"GET"},
      *     requirements={"path"=".*"},
-     *     defaults={"_format": "json"}
+     *     defaults={"_format": "json", "anonymous": true}
      * )
      *
      * @Rest\View(statusCode=200)
