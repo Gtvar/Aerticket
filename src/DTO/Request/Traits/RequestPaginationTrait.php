@@ -13,7 +13,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 trait RequestPaginationTrait
 {
     /**
-     * @var integer
+     * @var int
      *
      * @SWG\Property(type="string", description="Limit.")
      *
@@ -22,7 +22,7 @@ trait RequestPaginationTrait
     private $limit = PageInterface::DEFAULT_LIMIT;
 
     /**
-     * @var integer
+     * @var int
      *
      * @SWG\Property(type="string", description="Page.")
      *

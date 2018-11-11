@@ -15,12 +15,12 @@ class Paginator
     private $pagination;
 
     /**
-     * @var integer
+     * @var int
      */
     private $limit;
 
     /**
-     * @var integer
+     * @var int
      */
     private $offset;
 
@@ -31,11 +31,7 @@ class Paginator
      * @param integer           $limit
      * @param integer           $offset
      */
-    public function __construct(
-        DoctrinePaginator $pagination,
-        int $limit = PageInterface::DEFAULT_LIMIT,
-        int $offset = PageInterface::DEFAULT_LIMIT
-    )
+    public function __construct(DoctrinePaginator $pagination, int $limit = PageInterface::DEFAULT_LIMIT, int $offset = PageInterface::DEFAULT_LIMIT)
     {
         $this->pagination = $pagination;
         $this->limit = $limit;

@@ -7,7 +7,7 @@ namespace App\Annotation\Controller\Rest;
  *
  * @Annotation
  *
- * @Target({"METHOD","CLASS"})
+ * @Target({"METHOD"})
  */
 class View
 {
@@ -21,7 +21,7 @@ class View
     /**
      * @var array
      */
-    protected $serializerGroups = self::GROUP_READ;
+    protected $serializerGroups = [self::GROUP_READ];
 
     /**
      * @param integer $statusCode

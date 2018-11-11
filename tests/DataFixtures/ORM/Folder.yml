@@ -1,0 +1,3 @@
+App\Entity\Folder:
+    folder{1..3}:
+        path: 'folder<current()>'

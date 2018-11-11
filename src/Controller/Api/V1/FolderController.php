@@ -62,11 +62,7 @@ class FolderController
      *
      * @return FolderGetByPathResponse
      */
-    public function getByPathAction(
-        Request $request,
-        Validator $validator,
-        FolderGetByPathHandler $folderGetByPathHandler
-    ): FolderGetByPathResponse
+    public function getByPathAction(Request $request, Validator $validator, FolderGetByPathHandler $folderGetByPathHandler): FolderGetByPathResponse
     {
         $getByPathRequest = FolderGetByPathRequest::createFromRequest($request, $validator);
 

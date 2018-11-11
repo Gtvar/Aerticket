@@ -12,13 +12,7 @@ class VerboseHttpException extends HttpException
     /**
      * {@inheritdoc}
      */
-    public function __construct(
-        $statusCode,
-        $message = null,
-        \Exception $previous = null,
-        array $headers = [],
-        $code = 0
-    )
+    public function __construct($statusCode, $message = null, \Exception $previous = null, array $headers = [], $code = 0)
     {
         $headers['X-Exception-Verbose'] = 1;
 

@@ -5,6 +5,7 @@ namespace App\DTO\Response\Folder;
 use App\DTO\Response\ResponseInterface;
 use App\Entity\Folder;
 use Swagger\Annotations as SWG;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * Class FolderGetByPathResponse
@@ -23,12 +24,16 @@ class FolderGetByPathResponse implements ResponseInterface
     /**
      * @var string
      *
+     * @Groups({"read"})
+     *
      * @SWG\Property(type="integer", description="Folder id.")
      */
     private $id;
 
     /**
      * @var string
+     *
+     * @Groups({"read"})
      *
      * @SWG\Property(type="string", description="Path.")
      */

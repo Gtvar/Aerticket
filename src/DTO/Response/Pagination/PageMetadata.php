@@ -20,21 +20,21 @@ use Swagger\Annotations as SWG;
 class PageMetadata
 {
     /**
-     * @var integer
+     * @var int
      *
      * @SWG\Property(property="current_page_number", type="integer"),
      */
     private $currentPageNumber;
 
     /**
-     * @var integer
+     * @var int
      *
      * @SWG\Property(property="total_item_count", type="integer"),
      */
     private $totalItemCount;
 
     /**
-     * @var integer
+     * @var int
      *
      * @SWG\Property(property="per_page", type="integer")
      */
