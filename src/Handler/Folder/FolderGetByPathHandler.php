@@ -4,6 +4,8 @@ namespace App\Handler\Folder;
 
 use App\DTO\Request\Folder\FolderGetByPathRequest;
 use App\DTO\Response\Folder\FolderGetByPathResponse;
+use App\Entity\Folder;
+use App\Exception\Http\VerboseNotFoundHttpException;
 use App\Repository\FolderRepository;
 
 /**
@@ -36,6 +38,10 @@ class FolderGetByPathHandler
     public function handle(FolderGetByPathRequest $folderGetByPathRequest): FolderGetByPathResponse
     {
         $folder = $this->folderRepository->findByPath($folderGetByPathRequest->getPath());
+
+        if (!$folder instanceof Folder) {
+            throw new VerboseNotFoundHttpException('folder.not_found');
+        }
 
         return FolderGetByPathResponse::createFromFolder($folder);
     }

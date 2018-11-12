@@ -38,11 +38,7 @@ class EntityReferenceValidator extends ConstraintValidator
     public function validate($value, Constraint $constraint): void
     {
         if (!$constraint instanceof EntityReference) {
-            throw new UnexpectedTypeException($constraint, __NAMESPACE__.'\EntityReference');
-        }
-
-        if (is_null($value)) {
-            return;
+            throw new UnexpectedTypeException($constraint, sprintf('%s\EntityReference', __NAMESPACE__));
         }
 
         $found = $this->entityManager->getRepository($constraint->entityClass)->findOneBy([

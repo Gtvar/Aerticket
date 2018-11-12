@@ -36,6 +36,36 @@ class WebTestCase extends BaseClass
     }
 
     /**
+     * Assert error response
+     *
+     * @param Client $client
+     * @param int    $code
+     */
+    public function assertErrorResponse(Client $client, int $code = 400): void
+    {
+        $this->assertStatusCode($code, $client);
+        $this->assertJsonResponse($client);
+        $response = $this->getData($client);
+        $this->assertArrayHasKey('code', $response);
+        $this->assertArrayHasKey('message', $response);
+    }
+
+    /**
+     * Assert validation error response
+     *
+     * @param Client $client
+     * @param int    $code
+     */
+    public function assertValidationErrorResponse(Client $client, int $code = 400): void
+    {
+        $this->assertErrorResponse($client, $code);
+        $response = $this->getData($client);
+        $this->assertArrayHasKey('errors', $response);
+
+        $this->assertTrue(is_array($response['errors']));
+    }
+
+    /**
      * Get data
      *
      * @param Client $client
@@ -48,6 +78,8 @@ class WebTestCase extends BaseClass
     }
 
     /**
+     * Get Repository
+     *
      * @param string $class
      *
      * @return ObjectRepository

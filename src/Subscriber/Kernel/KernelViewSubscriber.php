@@ -1,17 +1,16 @@
 <?php
 
-namespace App\Subscriber;
+namespace App\Subscriber\Kernel;
 
 use App\Annotation\Controller\Rest\View;
 use App\DTO\Response\ResponseInterface;
-use App\Exception\Subscriber\UnableResolveViewAnnotationException;
+use App\Subscriber\Exception\UnableResolveViewAnnotationException;
 use Doctrine\Common\Annotations\Reader;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Event\GetResponseForControllerResultEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
-use Symfony\Component\Serializer\Serializer;
 use Symfony\Component\Serializer\SerializerInterface;
 
 /**
@@ -20,7 +19,7 @@ use Symfony\Component\Serializer\SerializerInterface;
 class KernelViewSubscriber implements EventSubscriberInterface
 {
     /**
-     * @var Serializer
+     * @var SerializerInterface
      */
     private $serializer;
 
@@ -60,6 +59,10 @@ class KernelViewSubscriber implements EventSubscriberInterface
      */
     public function kernelEventsView(GetResponseForControllerResultEvent $event)
     {
+        if (!$event->isMasterRequest()) {
+            return;
+        }
+
         $result = $event->getControllerResult();
 
         if (!$result instanceof ResponseInterface) {

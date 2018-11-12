@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exception\Subscriber;
+namespace App\Subscriber\Exception;
 
 /**
  * Class UnableResolveViewAnnotationException

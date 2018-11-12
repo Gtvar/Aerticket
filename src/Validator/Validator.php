@@ -2,7 +2,7 @@
 
 namespace App\Validator;
 
-use App\Exception\Validator\InvalidParamsException;
+use App\Validator\Exception\InvalidParamsException;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\Constraints\Collection;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
