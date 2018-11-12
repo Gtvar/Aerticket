@@ -3,7 +3,6 @@
 namespace App\DTO\Request\Folder;
 
 use App\DTO\Request\RequestInterface;
-use App\Exception\Subscriber\UnableResolveViewAnnotationException;
 use App\Validator\Constraints;
 use App\Validator\Validator;
 use Swagger\Annotations as SWG;
