@@ -46,14 +46,16 @@ class FlightController
      * @SWG\Parameter(
      *     name="Flight search",
      *     in="body",
-     *     @ApiDoc\Model(type=App\DTO\Request\Flight\FlightSearchRequest::class)
+     *     @SWG\Schema(
+     *       type="object",
+     *         @SWG\Property(property="searchQuery", type="object",
+     *           @SWG\Property(property="departureAirport",type="string"),
+     *           @SWG\Property(property="arrivalAirport",type="string"),
+     *           @SWG\Property(property="departureDate",type="string"),
+     *     ),
+     *   )
      * )
      *
-     * @SWG\Response(
-     *     response=200,
-     *     @ApiDoc\Model(type=App\DTO\Response\Flight\FlightSearchResponse::class),
-     *     description="Successful response"
-     * )
      *
      * @SWG\Response(response=400, description="Validation Failed", @SWG\Schema(ref="#/definitions/error.400"))
      *

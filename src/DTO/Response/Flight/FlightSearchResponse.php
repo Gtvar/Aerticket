@@ -5,20 +5,10 @@ namespace App\DTO\Response\Flight;
 use App\DTO\Request\Flight\FlightSearchRequest;
 use App\DTO\Response\ResponseInterface;
 use App\Entity\Flight;
-use Swagger\Annotations as SWG;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * Class FlightSearchResponse
- *
- * @SWG\Definition(
- *     definition="FlightSearchResponse",
- *     type="object",
- *     required={
- *         "searchQuery",
- *         "searchResults"
- *     }
- * )
  */
 class FlightSearchResponse implements ResponseInterface
 {
@@ -28,8 +18,6 @@ class FlightSearchResponse implements ResponseInterface
      * @var array
      *
      * @Groups({"read"})
-     *
-     * @SWG\Property(type="string", description="Search query.")
      */
     private $searchQuery;
 
@@ -37,8 +25,6 @@ class FlightSearchResponse implements ResponseInterface
      * @var array
      *
      * @Groups({"read"})
-     *
-     * @SWG\Property(type="string", description="Search results.")
      */
     private $searchResults;
 
