@@ -31,4 +31,7 @@ http://127.0.0.1:8000/api/doc
 #### Open Client page
 
 http://127.0.0.1:8000/client/
-
+```sh
+user: api
+password: apipass
+```

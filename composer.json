@@ -12,6 +12,7 @@
         "symfony/framework-bundle": "*",
         "symfony/monolog-bundle": "^3.3",
         "symfony/orm-pack": "^1.0",
+        "symfony/security-bundle": "*",
         "symfony/serializer-pack": "^1.0",
         "symfony/validator": "*",
         "symfony/yaml": "*"

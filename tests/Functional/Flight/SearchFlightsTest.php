@@ -39,7 +39,7 @@ class SearchFlightsTest extends WebTestCase
             ],
         ];
 
-        $client = $this->makeClient();
+        $client = $this->makeClient(true);
         $client->request('POST', $path, [], [], [], json_encode($payload));
 
         $this->assertEquals(Response::HTTP_OK, $client->getResponse()->getStatusCode());
@@ -67,7 +67,7 @@ class SearchFlightsTest extends WebTestCase
             ],
         ];
 
-        $client = $this->makeClient();
+        $client = $this->makeClient(true);
         $client->request('POST', $path, [], [], [], json_encode($payload));
 
         $this->assertEquals(Response::HTTP_BAD_REQUEST, $client->getResponse()->getStatusCode());
