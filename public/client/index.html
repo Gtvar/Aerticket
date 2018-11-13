@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Client</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-12">
+					<h3>
+						Client for search
+					</h3>
+					<ul>
+						<li class="list-item">
+							Read Readme before
+						</li>
+					</ul>
+					<p>
+
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>
+						Search form
+					</h3>
+					<form role="form">
+						<div class="form-group">
+							 
+							<label for="departureAirport">
+								Departure airport
+							</label>
+							<input type="text" class="form-control" id="departureAirport" value="IEV">
+						</div>
+						<div class="form-group">
+
+							<label for="arrivalAirport">
+								Arrival airport
+							</label>
+							<input type="text" class="form-control" id="arrivalAirport" value="BUD">
+						</div>
+						<div class="form-group">
+
+							<label for="departureDate">
+								Date
+							</label>
+							<input type="text" class="form-control" id="departureDate" value="2018-11-13 11:11:51">
+						</div>
+
+						<button type="submit" id="search_button" class="btn btn-primary">
+							Search
+						</button>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<h3>
+						Search result
+					</h3>
+
+					<form role="form">
+						<textarea id="result" rows="120" cols="70"></textarea>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  	<script>
+        $(window).on('load', function() {
+            var now = new Date($.now());
+			var formattedDate = now.getFullYear() + '-' + (now.getMonth() + 1) + '-' + now.getDate() + ' '
+				+ now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+			$('#departureDate').val(formattedDate);
+        });
+	</script>
+  </body>
+</html>

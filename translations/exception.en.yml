@@ -1,2 +1,4 @@
-folder:
-    not_found: Folder not found.
+airport:
+    not_found: Airport not found.
+flights:
+    not_found: Flights not found.

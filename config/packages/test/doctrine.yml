@@ -3,4 +3,4 @@ doctrine:
     default_connection: default
     connections:
       default:
-        driver:   pdo_sqlite
+        driver: pdo_sqlite
