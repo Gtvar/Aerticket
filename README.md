@@ -9,16 +9,20 @@ Requirements
 Initialize
 ----------
 
-#### Run server
-
 ```sh
-bin/console server:run
+composer install
 ```
 
 #### Necessarily Run tests
 DB data will be load from fixtures
 ```sh
 phpunit tests
+```
+
+#### Run server
+
+```sh
+bin/console server:run
 ```
 
 Checks
