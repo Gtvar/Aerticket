@@ -1,0 +1,25 @@
+App\Entity\Flight:
+    flightW6:
+        number: 'W64556'
+        transporter: '@transporterW6'
+        departureAirport: '@airportIEV'
+        arrivalAirport: '@airportBUD'
+        departureDateTime: <dateTimeBetween('now', 'now')>
+        arrivalDateTime: <dateTimeBetween('+2h', 'now')>
+        duration: 120
+    flightPS:
+        number: 'PS1234'
+        transporter: '@transporterPS'
+        departureAirport: '@airportIEV'
+        arrivalAirport: '@airportBUD'
+        departureDateTime: <dateTimeBetween('now', 'now')>
+        arrivalDateTime: <dateTimeBetween('+1h', 'now')>
+        duration: 90
+    flight2W6:
+        number: 'W64558'
+        transporter: '@transporterW6'
+        departureAirport: '@airportIEV'
+        arrivalAirport: '@airportBUD'
+        departureDateTime: <dateTimeBetween('+2h', 'now')>
+        arrivalDateTime: <dateTimeBetween('+4h', 'now')>
+        duration: 100

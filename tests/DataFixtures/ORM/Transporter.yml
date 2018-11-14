@@ -1,0 +1,7 @@
+App\Entity\Transporter:
+    transporterW6:
+        code: 'W6'
+        name: 'WizzAir'
+    transporterPS:
+        code: 'PS'
+        name: 'UkraineInternational'

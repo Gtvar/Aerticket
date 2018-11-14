@@ -1,0 +1,5 @@
+App\Entity\Airport:
+    airportIEV:
+        code: 'IEV'
+    airportBUD:
+        code: 'BUD'

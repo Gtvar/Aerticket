@@ -74,6 +74,8 @@ class WebTestCase extends BaseClass
      */
     public function getData(Client $client): array
     {
+//        echo $client->getResponse()->getContent();
+
         return json_decode($client->getResponse()->getContent(), true);
     }
 

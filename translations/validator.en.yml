@@ -1,8 +1,10 @@
-path:
-    invalid: This path is not valid.
-
-folder_get_by_path_request:
-    path:
-        not_null: Path is null
-    folder:
-        not_found: Folder not found
+flight_search:
+    departure_airport:
+        not_null: Departure airport is null
+        not_found: Departure airport not found
+    arrival_airport:
+        not_null: Arrival airport is null
+        not_found: Arrival airport not found
+    departure_date:
+        not_null: Departure date is null
+        invalid: Departure date is invalid
